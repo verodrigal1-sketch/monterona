@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holy Week in the Pampanga</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0c0c0c;
+  text-align: center;
+}
+
+header {
+  background: #6b0000;
+  color: white;
+  padding: 5px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgb(8, 8, 8);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 1000%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 10%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  padding: 15px;
+  font-size: 16px;
+  background: #fff;
+}
+
+
+input[type="radio"] { display: none; }
+
+
+#slide1:checked ~ .slideshow-container .slides { transform: translateX(0%); }
+#slide2:checked ~ .slideshow-container .slides { transform: translateX(-10%); }
+#slide3:checked ~ .slideshow-container .slides { transform: translateX(-20%); }
+#slide4:checked ~ .slideshow-container .slides { transform: translateX(-30%); }
+#slide5:checked ~ .slideshow-container .slides { transform: translateX(-40%); }
+#slide6:checked ~ .slideshow-container .slides { transform: translateX(-50%); }
+#slide7:checked ~ .slideshow-container .slides { transform: translateX(-60%); }
+#slide8:checked ~ .slideshow-container .slides { transform: translateX(-70%); }
+#slide9:checked ~ .slideshow-container .slides { transform: translateX(-80%); }
+#slide10:checked ~ .slideshow-container .slides { transform: translateX(-90%); }
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.arrow:hover { background: rgba(0,0,0,0.8); }
+.left { left: 10px; }
+.right { right: 10px; }
+
+
+#slide1:checked ~ .slideshow-container .prev1,
+#slide1:checked ~ .slideshow-container .next1,
+#slide2:checked ~ .slideshow-container .next2,
+#slide2:checked ~ .slideshow-container .prev2,
+#slide3:checked ~ .slideshow-container .prev3,
+#slide3:checked ~ .slideshow-container .next3,
+#slide4:checked ~ .slideshow-container .prev4,
+#slide4:checked ~ .slideshow-container .next4,
+#slide5:checked ~ .slideshow-container .prev5,
+#slide5:checked ~ .slideshow-container .next5,
+#slide6:checked ~ .slideshow-container .prev6,
+#slide6:checked ~ .slideshow-container .next6,
+#slide7:checked ~ .slideshow-container .prev7,
+#slide7:checked ~ .slideshow-container .next7,
+#slide8:checked ~ .slideshow-container .prev8,
+#slide8:checked ~ .slideshow-container .next8,
+#slide9:checked ~ .slideshow-container .prev9,
+#slide9:checked ~ .slideshow-container .next9,
+#slide10:checked ~ .slideshow-container .prev10,
+#slide10:checked ~ .slideshow-container .next10 {
+  display: block;
+}
+
+.arrow { display: none; }
+
+.dots { margin-top: 15px; }
+.dot {
+  height: 12px; 
+  width: 12px; 
+  margin: 0 5px;
+  background-color: #bbb; 
+  border-radius: 50%;
+  display: inline-block; 
+  cursor: pointer;
+}
+#slide1:checked .dots label[for="slide1"],
+#slide2:checked .dots label[for="slide2"],
+#slide3:checked .dots label[for="slide3"],
+#slide4:checked .dots label[for="slide4"],
+#slide5:checked .dots label[for="slide5"],
+#slide6:checked .dots label[for="slide6"],
+#slide7:checked .dots label[for="slide7"],
+#slide8:checked .dots label[for="slide8"],
+#slide9:checked .dots label[for="slide9"],
+#slide10:checked .dots label[for="slide10"] {
+  background-color: #6b0000;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Holy Week in Pampanga</h1>
+  <p>Traditions, Faith, and Culture</p>
+</header>
+
+
+<input type="radio" name="slider" id="slide1" checked>
+<input type="radio" name="slider" id="slide2">
+<input type="radio" name="slider" id="slide3">
+<input type="radio" name="slider" id="slide4">
+<input type="radio" name="slider" id="slide5">
+<input type="radio" name="slider" id="slide6">
+<input type="radio" name="slider" id="slide7">
+<input type="radio" name="slider" id="slide8">
+<input type="radio" name="slider" id="slide9">
+<input type="radio" name="slider" id="slide10">
+
+<div class="slideshow-container">
+  <div class="slides">
+    <div class="slide"><img src="mo1.jpg"><div class="caption"> Trivia: Did you know Holy Week is a time of reflection, sacrifice, and renewal.</div></div>
+    <div class="slide"><img src="mo2.jpg"><div class="caption">Trivia: Did you know Meat is avoided on Fridays during Lent.</div></div>
+    <div class="slide"><img src="mo3.jpg"><div class="caption">Trivia: Did you know Fasting is common on Ash Wednesday and Good Friday.</div></div>
+    <div class="slide"><img src="mo4.jpg"><div class="caption">Trivia: Did you know Many people attend confession during Holy Week.</div></div>
+    <div class="slide"><img src="mo5.jpg"><div class="caption">Trivia: Did you know Women discovered the empty tomb on Easter Sunday.</div></div>
+    <div class="slide"><img src="mo6.jpg"><div class="caption">Trivia: Did you know Judas Iscariot betrayed Jesus during Holy Week.</div></div>
+    <div class="slide"><img src="mo7.jpg"><div class="caption">Trivia: Did you know The word “Hosanna” is shouted on Palm Sunday.</div></div>
+    <div class="slide"><img src="mo8.jpg"><div class="caption">Trivia: Did you know The color violet is used during most of Holy Week.</div></div>
+    <div class="slide"><img src="mo9.jpg"><div class="caption">Trivia: Did you know Church bells are often silent from Thursday to Saturday.</div></div>
+    <div class="slide"><img src="mo10.jpg"><div class="caption">Trivia: Did you know In Pampanga, reenactments of the crucifixion are held.</div></div>
+  </div>
+
+  
+  <label for="slide10" class="arrow left prev1">⬅</label>
+  <label for="slide2" class="arrow right next1">⮕</label>
+  
+  <label for="slide1" class="arrow left prev2">⬅</label>
+  <label for="slide3" class="arrow right next2">⮕</label>
+  
+  <label for="slide2" class="arrow left prev3">⬅</label>
+  <label for="slide4" class="arrow right next3">⮕</label>
+  
+  <label for="slide3" class="arrow left prev4">⬅</label>
+  <label for="slide5" class="arrow right next4">⮕</label>
+  
+  <label for="slide4" class="arrow left prev5">⬅</label>
+  <label for="slide6" class="arrow right next5">⮕</label>
+  
+  <label for="slide5" class="arrow left prev6">⬅</label>
+  <label for="slide7" class="arrow right next6">⮕</label>
+  
+  <label for="slide6" class="arrow left prev7">⬅</label>
+  <label for="slide8" class="arrow right next7">⮕</label>
+  
+  <label for="slide7" class="arrow left prev8">⬅</label>
+  <label for="slide9" class="arrow right next8">⮕</label>
+  
+  <label for="slide8" class="arrow left prev9">⬅</label>
+  <label for="slide10" class="arrow right next9">⮕</label>
+  
+  <label for="slide9" class="arrow left prev10">⬅</label>
+  <label for="slide1" class="arrow right next10">⮕</label>
+</div>
+
+
+<div class="dots">
+  <label class="dot" for="slide1"></label>
+  <label class="dot" for="slide2"></label>
+  <label class="dot" for="slide3"></label>
+  <label class="dot" for="slide4"></label>
+  <label class="dot" for="slide5"></label>
+  <label class="dot" for="slide6"></label>
+  <label class="dot" for="slide7"></label>
+  <label class="dot" for="slide8"></label>
+  <label class="dot" for="slide9"></label>
+  <label class="dot" for="slide10"></label>
+</div>
+</body>
+</html>
